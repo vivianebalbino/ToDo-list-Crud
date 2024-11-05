@@ -16,7 +16,9 @@ export class TaskFormComponent {
     category: '',
     dueTime: ''
   };
+    
 
+  
   ngOnChanges(changes: SimpleChanges): void {
     if (changes['task'] && changes['task'].currentValue) {
       this.task = { ...changes['task'].currentValue };
